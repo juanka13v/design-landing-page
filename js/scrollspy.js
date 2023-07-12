@@ -1,39 +1,25 @@
 const sections = document.querySelectorAll(".section");
 const navLinks = document.querySelectorAll(".links > li > a");
 
-const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        let section = `#${entry.target.dataset.section}`;
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const sectionId = `#${entry.target.dataset.section}`;
 
-        if(section == "#home") {
-            history.pushState({}, "/", "/");
-        } else {
-            history.pushState({}, section, section);
-        }
+      const path = sectionId === "#home" ? "/" : sectionId;
+      history.pushState({}, sectionId, path);
 
-        navLinks.forEach((link) => {
-          if (section === link.hash) {
-            link.parentElement.classList.add("active");
-            return;
-          }
-
-          if (section === "#home") {
-            link.parentElement.classList.remove("active");
-            return;
-          }
-
-          link.parentElement.classList.remove("active");
-        });
-      }
-    });
-  },
-  {
-    threshold: 1,
-    rootMargin: "0px",
-  }
-);
+      navLinks.forEach((link) => {
+        const linkHash = link.hash;
+        const isActive = linkHash === sectionId || (sectionId === "#home" && linkHash === "");
+        link.parentElement.classList.toggle("active", isActive);
+      });
+    }
+  });
+}, {
+  threshold: 1,
+  rootMargin: "0px",
+});
 
 sections.forEach((section) => {
   observer.observe(section);

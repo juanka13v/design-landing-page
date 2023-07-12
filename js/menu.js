@@ -26,6 +26,7 @@ btnMenu.addEventListener("click", (e) => {
        openMenu()
        return
     }
+    
     closeMenu()
 })
 
