@@ -1,0 +1,121 @@
+.works {
+    max-width: calc(1140px - 4rem);
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (width < 768px) {
+        padding: 2rem 1rem;
+    }
+
+    .works-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .col-1 {
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .title {
+                font-size: 2.4rem;
+
+                @media (width < 580px) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .col-2 {
+            display: flex;
+            gap: 10px;
+
+            .btn-slider {
+                border-radius: 50%;
+                background: $white;
+                border: 2px solid $gray-light;
+                outline: none;
+                cursor: pointer;
+                padding: 6px;
+
+                i {
+                    font-size: 1.6rem;
+                    color: $black;
+                }
+
+                &.disable {
+                    background: $gray-light;
+                    cursor: default;
+                }
+            }
+        }
+    }
+
+    .works-slider {
+        margin-top: 2rem;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .slider-container {
+            display: flex;
+            gap: 1rem;
+            transition: transform 0.3s ease;
+            transform: translateX(0%);
+
+            .slider-item {
+              min-width: calc(33.33% - 13.333px); //gap spacing
+                position: relative;
+
+                @media (width < 768px) {
+                    min-width: calc(50% - 13.333px);
+                    min-height: 200px;
+                }
+
+                @media (width < 580px) {
+                    min-width: calc(100% - 13.333px);
+                    min-height: 200px;
+                    max-height: 300px;
+                }
+
+                img {
+                      
+                    border-radius: 14px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .content {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 1rem 1rem;
+                    width: calc(100% - 2rem);
+                    background: $black-shadow;
+                    border-radius: 0 0 14px 14px;
+
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    p {
+                        font-size: .9rem;
+                        color: $white;
+                        font-weight: 400;
+                    }
+
+                    i {
+                        color: $white;
+                        font-size: 1.3rem;
+                    }
+                }
+              }
+        }
+    }
+}

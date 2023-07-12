@@ -1,0 +1,58 @@
+// Variables
+@import "variables";
+
+// Reset
+@import "reset";
+
+// Components
+@import "components/button";
+@import "components/header";
+@import "components/footer";
+@import "components/info";
+@import "components/team";
+@import "components/testimonials";
+@import "components/services";
+@import "components/works";
+@import "components/about";
+@import "components/main";
+
+
+
+*, html {
+
+    scroll-behavior: smooth !important;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: $poppins;
+}
+
+
+.margin-y {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    @media (width < 580px) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.subtitle {
+    border-radius: 12px;
+    width: fit-content;
+    padding: 10px 12px;
+    color: $orange;
+    background: $gray-light;
+    font-size: .9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.title {
+    color: $black;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+}

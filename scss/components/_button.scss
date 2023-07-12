@@ -1,0 +1,38 @@
+.btn {
+    border: none;
+    border-radius: 8px;
+    background: $white;
+    
+    a {
+        display: block;
+        padding: 10px 12px;
+        color: $black;
+        font-family: $poppins;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    &:hover {
+        background: $orange;
+
+        a {
+            color: $white;
+        }
+    }
+
+    &.btn-orange {
+        background: $orange;
+
+        a {
+            color: $white;
+        }
+
+        &:hover {
+            background: $white;
+            
+            a {
+                color: $black;
+            }
+        }
+    }
+}

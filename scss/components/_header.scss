@@ -1,0 +1,130 @@
+.header {
+    background: $white;
+    max-width: calc(1140px - 2rem);
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+
+    @media (width < 786px) {
+        height: 60px;
+    }
+
+    .logo {
+        a {
+            display: flex;
+            h3 {
+                color: $black;
+                font-size: 2.4rem;
+                font-weight: 700;
+                font-family: $poppins;
+
+                span {
+                    color: $orange;
+                }
+            }
+        }
+    } 
+
+    .btn-menu {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        cursor: pointer;
+
+        @media (width < 786px) {
+            display: flex;
+        }
+
+        .bx-left-arrow-alt {
+            font-size: 2rem;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+
+        
+
+        @media (width < 786px) {
+            background: $white;
+            flex-direction: column;
+            gap: 3rem;
+            width: 70%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            height: calc(100vh - 60px);
+            transform: translateX(-100%);
+            transition: all .3s ease-in-out;
+            &.active {
+                transform: translateX(0);
+            }
+
+            
+
+            .links {
+                flex-direction: column;
+                li {
+                    &:first-child {
+                        margin-top: 2.5rem;
+                    }
+                }
+            }
+        }
+        
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            li {
+                position: relative;
+                a {
+                    color: $black;
+                    font-size: 1rem;
+                    font-family: $poppins;
+                    font-weight: 700;
+                }
+
+                &.active::after {
+                    background-color: $orange;
+                    content: "";
+                    position: absolute;
+                    border-radius: 12px;
+                    bottom: -6px; /* Adjust the position of the underline */
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 50%; /* Adjust the width of the underline */
+                    height: 4px; /* Adjust the thickness of the underline */
+                }
+            }
+        }
+
+
+        .btn-orange {
+            display: none;
+
+            @media (width < 780px) {
+                display: block;
+            }
+        }
+    }
+
+    .btn-orange {
+        @media (width < 780px) {
+            display: none;
+        }
+    }
+}
