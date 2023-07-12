@@ -6,7 +6,12 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         let section = `#${entry.target.dataset.section}`;
-        history.pushState({}, section, section);
+
+        if(section == "#home") {
+            history.pushState({}, "/", "/");
+        } else {
+            history.pushState({}, section, section);
+        }
 
         navLinks.forEach((link) => {
           if (section === link.hash) {
