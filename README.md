@@ -2,6 +2,11 @@
 
 This is a test landing page for a fictitious company specializing in web design, UX/UI, branding, and product design. The purpose of this landing page is to showcase the company's services and provide an overview of their expertise in the field.
 
+## Preview
+
+You can see a preview of the page at [https://work-design.netlify.app/](https://work-design.netlify.app/). Please note that this is just a demonstration.
+
+
 ## Additional Features
 
 - **Responsive Design**: The landing page is built with responsive design principles, ensuring it adapts and displays properly on various devices and screen sizes. Whether your visitors are using desktops, tablets, or mobile phones, the layout and content will adjust accordingly for an optimal viewing experience.
