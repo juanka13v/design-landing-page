@@ -24,13 +24,11 @@ To view the landing page locally, follow these steps:
 
 ## Screenshots
 
-The following images showcase the landing page:
+The following image showcase the landing page:
 
 
-![Screenshot 1](/screenshots/screenshot-1.webp)
-![Screenshot 2](/screenshots/screenshot-2.webp)
-![Screenshot 3](/screenshots/screenshot-3.webp)
-![Screenshot 4](/screenshots/screenshot-4.webp)
+![Screenshot](/screenshot.webp)
+
 
 
 The design was created by [Kahaf - Design Agency](link-to-dribbble-author). You can check out more of their work on [Dribbble](https://dribbble.com/Kahafdesignagency).
@@ -50,9 +48,9 @@ The design was created by [Kahaf - Design Agency](link-to-dribbble-author). You 
 
 If you have any questions, inquiries, or are interested in collaborating with a junior developer, feel free to reach out to me through the following channels:
 
-- Twitter: [@junior_dev](https://twitter.com/junior_dev)
-- LinkedIn: [Junior Developer's Name](https://www.linkedin.com/in/junior-developer)
-- GitHub: [junior-dev](https://github.com/junior-dev)
+- Twitter: [@juanka13v](https://twitter.com/valero-juan)
+- LinkedIn: [Valero Juan](https://www.linkedin.com/in/valero-juan)
+- GitHub: [juanka13v](https://github.com/juanka13v)
 
 I'd be delighted to connect with you and discuss any job opportunities, projects, or simply engage within the developer community!
 
