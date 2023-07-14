@@ -23,8 +23,8 @@ You can see a preview of the page at [https://work-design.netlify.app/](https://
 
 To view the landing page locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/juanka13v/design-lading-page`
-2. Navigate to the project directory: `cd design-lading-page`
+1. Clone the repository: `git clone https://github.com/juanka13v/design-landing-page`
+2. Navigate to the project directory: `cd design-landing-page`
 3. Open the `index.html` file in your web browser.
 
 ## Screenshots
