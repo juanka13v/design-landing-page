@@ -1,4 +1,4 @@
-# CW - Test Landing Page
+# CW - Design Landing Page
 
 This is a test landing page for a fictitious company specializing in web design, UX/UI, branding, and product design. The purpose of this landing page is to showcase the company's services and provide an overview of their expertise in the field.
 
@@ -23,8 +23,8 @@ You can see a preview of the page at [https://work-design.netlify.app/](https://
 
 To view the landing page locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/juanka13v/work-lading-page`
-2. Navigate to the project directory: `cd work-lading-page`
+1. Clone the repository: `git clone https://github.com/juanka13v/design-lading-page`
+2. Navigate to the project directory: `cd design-lading-page`
 3. Open the `index.html` file in your web browser.
 
 ## Screenshots
